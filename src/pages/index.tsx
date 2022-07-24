@@ -1,7 +1,7 @@
+import Styles from 'home/styles/home.module.scss';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { PageLinkList } from 'home/components/organisms/PageLinkList';
-import Styles from 'home/styles/home.module.scss';
+import { PageLinkList } from '@/home/components/organisms/PageLinkList';
 
 const Home: NextPage = () => (
   <>

@@ -8,6 +8,7 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "next", //eslint-plugin-react eslint-plugin-react-hookはeslint-config-nextに含まれてるので記述してないよ
     "next/core-web-vitals",
+    "plugin:storybook/recommended",
     "prettier"
   ],
   "parserOptions": {
@@ -50,10 +51,17 @@
       }
     ]
   },
-  //Next.jsのpagesはデフォルトエクスポートする必要があるのでオーバーライド
+  //Next.jsのpagesとstorybookはデフォルトエクスポートする必要があるのでオーバーライド
   "overrides": [
     {
       "files": ["*/pages/*"],
+      "rules": {
+        "import/no-default-export": "off",
+        "import/prefer-default-export": "error"
+      }
+    },
+    {
+      "files": ["*.stories.*"],
       "rules": {
         "import/no-default-export": "off",
         "import/prefer-default-export": "error"
