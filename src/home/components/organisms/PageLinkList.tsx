@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import { PageLink } from 'home/components/atoms/PageLink';
-import Styles from 'home/styles/pageLinkList.module.scss';
+import { PageLink } from '@/home/components/atoms/PageLink';
+import Styles from '@/home/styles/pageLinkList.module.scss';
 
 export const PageLinkList: FC = () => (
   <ul className={Styles.container}>

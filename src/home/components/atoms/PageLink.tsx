@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { FC, ReactNode } from 'react';
-import Styles from 'home/styles/pageLink.module.scss';
+import Styles from '@/home/styles/pageLink.module.scss';
 
 interface Props {
   link: string;
