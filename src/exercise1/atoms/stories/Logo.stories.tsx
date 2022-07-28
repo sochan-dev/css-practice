@@ -31,7 +31,6 @@ SpLogo.decorators = [
         style={{
           width: '105px',
           height: '50px',
-          position: 'relative',
         }}
       >
         <Story />
@@ -55,7 +54,6 @@ PcLogo.decorators = [
         style={{
           width: '210px',
           height: '100px',
-          position: 'relative',
         }}
       >
         <Story />

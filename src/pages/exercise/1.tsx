@@ -1,25 +1,10 @@
 import type { NextPage } from 'next';
-import { HeadingText } from '@/exercise1/atoms/HeadingText';
+import { Logo } from '@/exercise1/atoms/Logo';
+import { Header } from '@/exercise1/organisms/Header';
 
 const FirstExercise: NextPage = () => (
-  <div
-    style={{
-      position: 'relative',
-      height: '50vw',
-      width: '50vh',
-      backgroundColor: 'red',
-    }}
-  >
-    <div
-      style={{
-        position: 'relative',
-        height: '50%',
-        width: '50%',
-        backgroundColor: 'blue',
-      }}
-    >
-      <HeadingText>gorgeous!!</HeadingText>
-    </div>
+  <div>
+    <Header />
   </div>
 );
 
