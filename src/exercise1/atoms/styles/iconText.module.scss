@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+.iconText {
+  position: relative;
+  margin-top: 1em;
+  padding-left: 1em;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0.4em;
+    content: '';
+    display: block;
+    width: 0.6em;
+    height: 0.6em;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+  }
+}

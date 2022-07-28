@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Button } from './Button';
+import { Button } from '../Button';
 /**
  * Button Component for explanation of StoryBook
  */
@@ -12,6 +12,10 @@ export default {
       description: {
         component: '練習用のボタンコンポーネント',
       },
+    },
+    design: {
+      type: 'xd',
+      url: '/EXERCISE01.xd',
     },
   },
 } as ComponentMeta<typeof Button>;

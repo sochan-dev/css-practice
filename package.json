@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "devs": "next dev && yarn storybook",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -12,11 +13,22 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@storybook/addon-a11y": "^6.5.9",
     "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-viewport": "^6.5.9",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.5.9",
+    "classnames": "^2.3.1",
+    "css-loader": "^6.7.1",
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.54.0",
+    "sass-loader": "^13.0.2",
+    "sass-resources-loader": "^2.2.5",
+    "storybook-addon-xd-designs": "^6.0.0",
+    "storybook-preset-craco": "^0.0.6",
+    "style-loader": "^3.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
@@ -42,7 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-storybook": "^0.6.1",
     "prettier": "^2.6.2",
-    "sass": "^1.52.1",
+    "storybook-addon-next": "^1.6.7",
     "typescript": "4.7.4"
   }
 }

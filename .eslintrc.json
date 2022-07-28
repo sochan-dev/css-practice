@@ -54,7 +54,7 @@
   //Next.jsのpagesとstorybookはデフォルトエクスポートする必要があるのでオーバーライド
   "overrides": [
     {
-      "files": ["*/pages/*"],
+      "files": ["*/pages/**"],
       "rules": {
         "import/no-default-export": "off",
         "import/prefer-default-export": "error"

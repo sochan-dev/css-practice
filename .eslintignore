@@ -6,3 +6,4 @@ webpack.config.js
 .prettierrc.json
 package.json
 /src/graphql/apolloClient.ts
+next-env.d.ts
