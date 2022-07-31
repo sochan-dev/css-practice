@@ -1,0 +1,9 @@
+.next/
+public/
+node_modules/
+webpack.config.js
+.eslintrc.json
+.prettierrc.json
+package.json
+/src/graphql/apolloClient.ts
+next-env.d.ts

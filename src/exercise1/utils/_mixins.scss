@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+$breakpointList: (
+  l: 'screen and (width >= 768px)',
+);
+$ccc: red;
+@mixin media($breakpoint) {
+  @media #{map-get($breakpointList,$breakpoint)} {
+    @content;
+  }
+} ;

@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+@import '/src/exercise1/utils/variables.scss';
+
+.navLinkList {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 50px);
+  border-top: 1px solid #e7e7e7e7;
+  overflow-y: auto; /*中身があふれたら縦スクロール*/
+  -webkit-overflow-scrolling: touch; /*iOSで慣性スクロール有効化*/
+  @media screen and (min-width: 768px) {
+    position: static;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+  }
+}
+.navLinkList_active {
+  display: block;
+}

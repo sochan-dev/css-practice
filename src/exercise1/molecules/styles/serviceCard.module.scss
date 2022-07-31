@@ -1,0 +1,20 @@
+.serviceCard {
+  padding-bottom: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  .serviceCard__thumbnail {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .serviceCard__data {
+    padding: 0 1em;
+  }
+  .serviceCard__name {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .serviceCard__description {
+    line-height: 1.875;
+    margin-bottom: 18px;
+  }
+}

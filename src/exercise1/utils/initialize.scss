@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #37952f;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #70cc33;
+  text-decoration: none;
+}

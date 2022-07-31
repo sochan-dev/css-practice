@@ -2,7 +2,10 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    //switch分のフォールスルーに対してエラーを吐かせる。
+    "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -13,8 +16,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["custom-next-env.d.ts", "src/svg.d.ts", "./src/**/*"],
+  "exclude": ["node_modules", "next-env.d.ts"]
 }
+//"**/*.ts", "**/*.tsx"

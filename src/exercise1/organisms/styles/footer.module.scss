@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+@import '/src/exercise1/utils/variables.scss';
+
+.footer {
+  background-color: $color-black;
+  color: #ffffff;
+  padding: 0 2vw;
+  .footer__navList {
+  }
+  .footer__copyright {
+    margin: 25px 0;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin: 0 20px;
+    .footer__navList {
+      width: 15%;
+    }
+    .footer__copyright {
+      margin: 25px 0;
+      text-align: center;
+    }
+  }
+}

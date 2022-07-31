@@ -1,3 +1,71 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "next", //eslint-plugin-react eslint-plugin-react-hookはeslint-config-nextに含まれてるので記述してないよ
+    "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "root": true,
+  "ignorePatterns": [".eslintrc.json"],
+  "plugins": ["import"], // "import/prefer-default-export" "import/no-default-export"を追加したい
+  "rules": {
+    "no-console": "off", //consoleの使用を許可
+    "react-hooks/exhaustive-deps": "off",
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error", //export defaultを禁止
+    "no-use-before-define": "warn", //定義される前に変数を使用することを禁止
+    "react/require-default-props": "off", //デフォルトpropsに必須じゃないプロパティを指定できるようにする
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/react-in-jsx-scope": "off", //v17以降はimport React from 'react'は省略できるので、eslint/recommendedで必須になっている設定をoffにする。
+    "react/jsx-props-no-spreading": "off", //スプレッド演算子を使ってpropsに値を渡せるようにする
+    "import/no-absolute-path": "off",
+    "linebreak-style": 0,
+    //関数はアロー関数のみ
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    //モジュールのimport順をアルファベットの昇順にする。
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  },
+  //Next.jsのpagesとstorybookはデフォルトエクスポートする必要があるのでオーバーライド
+  "overrides": [
+    {
+      "files": ["*/pages/**"],
+      "rules": {
+        "import/no-default-export": "off",
+        "import/prefer-default-export": "error"
+      }
+    },
+    {
+      "files": ["*.stories.*"],
+      "rules": {
+        "import/no-default-export": "off",
+        "import/prefer-default-export": "error"
+      }
+    }
+  ]
 }

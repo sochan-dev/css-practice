@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+.productCardList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+  flex-wrap: wrap;
+  .productCardList__item {
+    margin-top: 20px;
+    width: calc((100% - 36px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    flex-wrap: nowrap;
+    .productCardList__item {
+      margin-top: 0;
+      width: calc((100% - 60px) / 4);
+    }
+  }
+}
