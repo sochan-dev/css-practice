@@ -39,7 +39,7 @@ Primary.decorators = [
 
 Primary.args = {
   type: 'primary',
-  txt: 'Primary',
+  children: 'Primary',
   href: '#',
 };
 
@@ -67,6 +67,6 @@ Secondary.decorators = [
 
 Secondary.args = {
   type: 'secondary',
-  txt: 'Secondary',
+  children: 'Secondary',
   href: '#',
 };

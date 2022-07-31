@@ -31,7 +31,6 @@ MvIllust.decorators = [
           width: '335px',
           height: '209px',
           backgroundColor: 'black',
-          position: 'relative',
         }}
       >
         <Story />
@@ -43,8 +42,6 @@ MvIllust.decorators = [
 MvIllust.args = {
   src: '/img/mv_illust.svg',
   alt: 'メインビジュアルの写真',
-  objectFit: 'contain',
-  layout: 'fill',
 };
 
 export const DmyThumb = Template.bind({});
@@ -56,13 +53,13 @@ DmyThumb.decorators = [
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
+        width: '10vw',
       }}
     >
       <div
         style={{
-          width: '334px',
-          height: '160px',
-          position: 'relative',
+          width: '100%',
+          height: '500px',
         }}
       >
         <Story />
@@ -74,6 +71,4 @@ DmyThumb.decorators = [
 DmyThumb.args = {
   src: '/img/dmy_thumb01.jpg',
   alt: 'ダミーのサムネイル写真',
-  objectFit: 'contain',
-  layout: 'fill',
 };

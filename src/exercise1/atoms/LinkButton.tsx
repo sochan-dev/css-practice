@@ -1,16 +1,16 @@
 import classnames from 'classnames';
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
 import Styles from '/src/exercise1/atoms/styles/linkButton.module.scss';
 
 interface Props {
   type: 'primary' | 'secondary';
   size: 'm' | 'l';
-  txt: string;
   href: string;
+  children: ReactNode;
 }
 
-export const LinkButton: FC<Props> = ({ type = 'primary', size = 'm', txt, href }) => (
+export const LinkButton: FC<Props> = ({ type = 'primary', size = 'm', href, children }) => (
   <a href={href} className={classnames(Styles[type], Styles[`linkButton_${size}`])}>
-    {txt}
+    {children}
   </a>
 );

@@ -30,7 +30,7 @@ module.exports = {
             resources: [
               path.resolve(__dirname, '../src/utils/reset.scss'),
               path.resolve(__dirname, '../src/home/utils/_variables.scss'),
-              path.resolve(__dirname, '../src/home/utils/_variables.scss'),
+              path.resolve(__dirname, '../src/exercise1/utils/_variables.scss'),
             ],
           },
         },

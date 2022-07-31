@@ -1,0 +1,19 @@
+.serviceCardList {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  .serviceCardList__item {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    .serviceCardList__item {
+      margin-top: 0px;
+      width: calc((100% - 40px) / 3);
+    }
+  }
+}

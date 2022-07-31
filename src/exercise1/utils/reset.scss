@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '/src/exercise1/utils/variables.scss';
 /*----------------------------------------
 	reset
 ----------------------------------------*/
@@ -14,6 +15,7 @@
 * {
   font-size: inherit;
   line-height: inherit;
+  color: $color-black;
 }
 
 ::before,
