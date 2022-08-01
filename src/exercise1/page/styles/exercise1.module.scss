@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+.container {
+  .container__main {
+    margin-top: 50px;
+  }
+
+  .container__contents {
+    margin: 0 15px;
+    max-width: 1080px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container__main {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .container__contents {
+      margin: 50px auto 0 auto;
+      max-width: 1080px;
+    }
+  }
+}

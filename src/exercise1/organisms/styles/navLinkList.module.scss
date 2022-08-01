@@ -3,11 +3,13 @@
 
 .navLinkList {
   position: absolute;
+  font-size: 18px;
+  background-color: white;
   left: 0;
   top: 50px;
   display: block;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   border-top: 1px solid #e7e7e7e7;
   overflow-y: auto; /*中身があふれたら縦スクロール*/
   -webkit-overflow-scrolling: touch; /*iOSで慣性スクロール有効化*/
