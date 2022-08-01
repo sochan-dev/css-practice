@@ -2,25 +2,27 @@
 @import '/src/exercise1/utils/variables.scss';
 
 .footer {
+  width: 100%;
   background-color: $color-black;
   color: #ffffff;
   padding: 0 2vw;
   .footer__navList {
   }
   .footer__copyright {
-    margin: 25px 0;
+    padding: 45px 0;
     text-align: center;
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin: 0 20px;
+    height: 110px;
     .footer__navList {
-      width: 15%;
     }
     .footer__copyright {
-      margin: 25px 0;
-      text-align: center;
+      text-align: right;
     }
   }
 }

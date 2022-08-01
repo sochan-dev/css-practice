@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+.footerNavLinkList {
+  font-size: 14px;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
