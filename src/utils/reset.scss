@@ -21,6 +21,10 @@
   text-decoration: inherit;
   vertical-align: inherit;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 html,
 body,

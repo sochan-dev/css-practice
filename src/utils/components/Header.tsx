@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { useState, useCallback } from 'react';
-import { HamburgerButton } from '../atoms/HamburgerButton';
-import { Logo } from '../atoms/Logo';
-import { NavLinkList } from './NavLinkList';
+import { HamburgerButton } from '../../exercise1/atoms/HamburgerButton';
+import { Logo } from '../../exercise1/atoms/Logo';
+import { NavLinkList } from '../../exercise1/organisms/NavLinkList';
 import Styles from '/src/exercise1/organisms/styles/header.module.scss';
 
 export const Header: FC = () => {

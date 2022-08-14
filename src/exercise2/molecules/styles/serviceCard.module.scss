@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+.serviceCard {
+  margin: 0 auto;
+  .serviceCard__bg {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
