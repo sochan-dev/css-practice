@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+@import '/src/exercise3/utils/variables.scss';
+.simpleInput {
+  -webkit-appearance: none;
+  appearance: none; /*ブラウザ標準スタイルを無効にする*/
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  padding: 1em 1.5em;
+  border: 1px solid $color-gray;
+  border-radius: 0.3em;
+  font-size: 16px;
+}

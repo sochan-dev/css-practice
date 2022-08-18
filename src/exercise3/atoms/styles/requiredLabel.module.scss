@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+@import '/src/exercise3/utils/variables.scss';
+
+.requiredLabel {
+  width: fit-content;
+  background-color: $color-main;
+  span {
+    font-size: 12px;
+    color: $color-white;
+    letter-spacing: 0.1em;
+  }
+  padding: 0 1em;
+}

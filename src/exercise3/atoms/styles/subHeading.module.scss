@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+@import '/src/exercise3/utils/variables.scss';
+.subHeading {
+  position: relative;
+  font-size: min(6.38vw, 24px);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.7em;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -0.7em;
+    width: 2.5em;
+    border-bottom: solid 2px $color-main;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: min(1.75vw, 28px);
+  }
+}

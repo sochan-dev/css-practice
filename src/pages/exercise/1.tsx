@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import { Footer } from '@/exercise1/organisms/Footer';
-import { Header } from '@/exercise1/organisms/Header';
+import { Footer } from '@/utils/components/Footer';
+import { Header } from '@/utils/components/Header';
 import { MainContent } from '@/exercise1/organisms/MainContent';
 import { MainVisual } from '@/exercise1/organisms/MainVisual';
 import { ProductCardList } from '@/exercise1/organisms/ProductCardList';

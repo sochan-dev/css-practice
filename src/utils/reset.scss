@@ -21,6 +21,10 @@
   text-decoration: inherit;
   vertical-align: inherit;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 html,
 body,
@@ -164,4 +168,19 @@ address {
 q::before,
 q::after {
   display: none;
+}
+
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='password'],
+textarea,
+select {
+  /*モバイル用ブラウザの初期スタイルやpcとの差のバグを無くす*/
+  -webkit-appearance: none;
+  /*ブラウザ標準スタイルシートを無効にする*/
+  appearance: none;
 }
