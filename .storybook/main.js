@@ -32,6 +32,7 @@ module.exports = {
               path.resolve(__dirname, '../src/home/utils/_variables.scss'),
               path.resolve(__dirname, '../src/exercise1/utils/_variables.scss'),
               path.resolve(__dirname, '../src/exercise2/utils/_variables.scss'),
+              path.resolve(__dirname, '../src/exercise3/utils/_variables.scss'),
             ],
           },
         },

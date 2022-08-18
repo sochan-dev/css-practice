@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+@import '/src/exercise3/utils/variables.scss';
+.errorMsg {
+  color: $color-error;
+  font-weight: bold;
+  &::before {
+    position: relative;
+    bottom: 1px;
+    content: '';
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    background-image: url('/public/img/icon_attention.svg');
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}

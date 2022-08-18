@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+@import '/src/exercise3/utils/_variables.scss';
+
+.formDecoration {
+  width: 100%;
+  .formDecoration__children_error {
+    border: 1px solid $color-error;
+  }
+  .formDecoration__children_focus {
+    &:focus {
+      border: 1px solid $color-main;
+      outline: none;
+      box-shadow: 0 0 5px $color-main;
+    }
+  }
+  .formDecoration__errorMsg {
+    margin-top: 1em;
+  }
+  .formDecoration__annotation {
+    color: $color-gray;
+    font-size: 12px;
+    margin-top: 1em;
+  }
+}

@@ -1,6 +1,7 @@
 import '/src/utils/reset.scss';
 import '../src/exercise1/utils/_variables.scss';
 import '../src/exercise2/utils/_variables.scss';
+import '../src/exercise3/utils/_variables.scss';
 import * as NextImage from 'next/image';
 
 export const parameters = {
