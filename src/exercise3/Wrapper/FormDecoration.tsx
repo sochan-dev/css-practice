@@ -6,7 +6,7 @@ interface Props {
   children: ReactElement;
   isError: boolean;
   errorMsg: string;
-  annotation: string;
+  annotation?: string;
 }
 
 export const FormDecoration: FC<Props> = (props) => {

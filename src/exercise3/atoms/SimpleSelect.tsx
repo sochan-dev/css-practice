@@ -18,7 +18,7 @@ export const SimpleSelect: FC<Props> = (props) => {
     <div className={Styles.simpleSelect}>
       <select {...attribute} className={overrideStyles}>
         {optionList.map((option, i) => (
-          <option key={option.id} {...option.attribute} disabled={i === 0} selected={i === 0}>
+          <option key={option.id} {...option.attribute} disabled={i === 0}>
             {option.label}
           </option>
         ))}

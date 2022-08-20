@@ -1,0 +1,26 @@
+.container {
+  .mainVisual {
+    margin-top: 50px;
+  }
+  .main {
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 50px 20px;
+    section:first-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .mainVisual {
+      margin-top: 100px;
+    }
+    .main {
+      margin: 0 auto;
+      padding: 70px 50px;
+      section:first-child {
+        padding-bottom: 70px;
+      }
+    }
+  }
+}

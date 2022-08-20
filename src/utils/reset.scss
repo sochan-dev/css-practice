@@ -23,7 +23,6 @@
 }
 html,
 body {
-  overflow-x: hidden;
 }
 
 html,
@@ -178,7 +177,8 @@ input[type='tel'],
 input[type='number'],
 input[type='password'],
 textarea,
-select {
+select,
+button {
   /*モバイル用ブラウザの初期スタイルやpcとの差のバグを無くす*/
   -webkit-appearance: none;
   /*ブラウザ標準スタイルシートを無効にする*/

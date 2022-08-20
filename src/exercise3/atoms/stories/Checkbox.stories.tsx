@@ -33,6 +33,7 @@ checkbox.decorators = [
 
 checkbox.args = {
   name: 'agree',
+  id: 'agree',
   value: '1',
   label: '同意します。',
 };

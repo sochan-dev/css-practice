@@ -6,6 +6,7 @@
   font-family: 'Oswald', sans-serif;
   color: $color-main;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
   @media screen and (min-width: 768px) {
     font-size: min(1.5vw, 24px);
   }

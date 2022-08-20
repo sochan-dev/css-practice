@@ -33,6 +33,22 @@
     "react/react-in-jsx-scope": "off", //v17以降はimport React from 'react'は省略できるので、eslint/recommendedで必須になっている設定をoffにする。
     "react/jsx-props-no-spreading": "off", //スプレッド演算子を使ってpropsに値を渡せるようにする
     "import/no-absolute-path": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
     "linebreak-style": 0,
     //関数はアロー関数のみ
     "react/function-component-definition": [

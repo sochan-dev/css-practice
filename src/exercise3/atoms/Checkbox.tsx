@@ -5,16 +5,17 @@ interface Props {
   value: string | number;
   label: string;
   name: string;
+  id: string;
   checked?: boolean;
 }
 
 export const Checkbox: FC<Props> = (props) => {
-  const { value, label, name, checked } = props;
+  const { value, label, name, id, checked } = props;
 
   return (
     <div className={Styles.checkbox}>
-      <input type="checkbox" name={name} value={value} checked={checked} id={label} />
-      <label htmlFor={label}>{label}</label>
+      <input type="checkbox" name={name} value={value} checked={checked} id={id} />
+      <label htmlFor={id}>{label}</label>
     </div>
   );
 };

@@ -11,7 +11,7 @@ interface Props {
   }[];
   isError: boolean;
   errorMsg: string;
-  annotation: string;
+  annotation?: string;
 }
 
 export const Select: FC<Props> = (props) => {

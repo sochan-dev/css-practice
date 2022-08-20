@@ -18,6 +18,7 @@
   }
   label {
     padding: 0.3em 0.3em 0.3em 2em;
+    cursor: pointer;
     &::before {
       content: '';
       position: absolute;
@@ -31,7 +32,6 @@
       border-radius: 50%;
       border: 1px solid $color-gray;
       background-color: $color-white;
-      cursor: pointer;
     }
     &::after {
       content: '';

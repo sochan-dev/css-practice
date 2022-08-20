@@ -6,7 +6,7 @@ interface Props {
   attribute: DetailedHTMLProps<TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement>;
   isError: boolean;
   errorMsg: string;
-  annotation: string;
+  annotation?: string;
 }
 
 export const TextArea: FC<Props> = (props) => {
