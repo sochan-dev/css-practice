@@ -1,0 +1,15 @@
+.mainVisual {
+  width: 100vw;
+  background-color: #eaf5e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 50px;
+  .mainVisual__heading {
+    text-align: center;
+    margin-bottom: 2.5em;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 80px 80px;
+  }
+}

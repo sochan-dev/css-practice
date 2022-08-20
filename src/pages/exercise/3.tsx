@@ -1,13 +1,26 @@
 import type { NextPage } from 'next';
-import { FormDecoration } from '@/exercise3/Wrapper/FormDecoration';
-import { Radio } from '@/exercise3/atoms/Radio';
+import { ContactForm } from '@/exercise3/organisms/ContactForm';
+import Styles from '/src/exercise3/page/styles/exercise3.module.scss';
+import { ContactInfo } from '@/exercise3/organisms/ContactInfo';
+import { MainVisual } from '@/exercise3/organisms/MainVisual';
+import { Footer } from '@/utils/components/Footer';
+import { Header } from '@/utils/components/Header';
 
 const thirdExercise: NextPage = () => (
-  <div style={{ display: 'flex', height: '100vh', justifyContent: 'center', alignItems: 'center' }}>
-    <div>
-      <Radio name="gender" value="0" label="漢おおおおお" />
-      <Radio name="gender" value="1" label="女あああああああ" />
+  <div className={Styles.container}>
+    <Header />
+    <div className={Styles.mainVisual}>
+      <MainVisual />
     </div>
+    <main className={Styles.main}>
+      <section>
+        <ContactInfo />
+      </section>
+      <section>
+        <ContactForm isError />
+      </section>
+    </main>
+    <Footer />
   </div>
 );
 

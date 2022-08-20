@@ -32,7 +32,8 @@ radio.decorators = [
 ];
 
 radio.args = {
-  name: 'gender',
+  id: 'man',
   value: '0',
   label: '漢おおおおお',
+  name: 'gender',
 };

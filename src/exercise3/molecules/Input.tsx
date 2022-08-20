@@ -6,7 +6,7 @@ interface Props {
   attribute: DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
   isError: boolean;
   errorMsg: string;
-  annotation: string;
+  annotation?: string;
 }
 
 export const Input: FC<Props> = (props) => {
